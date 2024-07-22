@@ -13,7 +13,7 @@ yanked = "warn"
 
 
 [licenses]
-allow = ["Apache-2.0", "MIT", "Unicode-DFS-2016"]
+allow = ["Zlib", "Apache-2.0", "MIT", "Unicode-DFS-2016"]
 confidence-threshold = 0.8
 exceptions = []
 

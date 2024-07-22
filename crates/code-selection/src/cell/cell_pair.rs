@@ -33,6 +33,7 @@ impl<'a> CellPair<'a> {
     pub fn read_instruction(&mut self) -> Instruction {
         let opcode = self.advance_pc();
 
+        #[allow(clippy::unusual_byte_groupings)]
         match opcode {
             0b0000_0000 => InstructionNop.into(),
 

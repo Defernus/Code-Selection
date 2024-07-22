@@ -40,7 +40,7 @@ impl World {
                 let pair = CellPair::new(main_cell, neighbor_cell);
 
                 // Safety: we will drop the references before this function returns
-                pairs.push(unsafe { std::mem::transmute(pair) });
+                pairs.push(unsafe { std::mem::transmute::<CellPair<'_>, CellPair<'static>>(pair) });
             }
         }
 
